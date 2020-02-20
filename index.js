@@ -6,8 +6,9 @@ import Child from './Child'
 import AppDefaultprops from './defaultProps/AppDefaultprops'
 import AppPropTypes from './PropTypes/AppPropTypes'
 import AppPropspractise from './propsPractise/AppPropspractise';
-import AppReactChildren from './React Children/AppReactChildren'
+import AppReactChildren from './React Children/AppReactChildren';
+import AppReactChildrenPractise from './ReactChildrenpractise/AppReactChildrenPractise';
 
 
 
-render(<AppReactChildren></AppReactChildren>, document.getElementById('root'));
+render(<AppReactChildrenPractise></AppReactChildrenPractise>, document.getElementById('root'));
