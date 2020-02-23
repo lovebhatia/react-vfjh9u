@@ -8,7 +8,8 @@ import AppPropTypes from './PropTypes/AppPropTypes'
 import AppPropspractise from './propsPractise/AppPropspractise';
 import AppReactChildren from './React Children/AppReactChildren';
 import AppReactChildrenPractise from './ReactChildrenpractise/AppReactChildrenPractise';
+import AppHocsPart from './HocsPart3/AppHocsPart';
 
 
 
-render(<AppReactChildrenPractise></AppReactChildrenPractise>, document.getElementById('root'));
+render(<AppHocsPart></AppHocsPart>, document.getElementById('root'));
