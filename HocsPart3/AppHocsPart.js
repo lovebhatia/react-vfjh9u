@@ -1,9 +1,11 @@
 import React from "react"
+import {withFavoriteNumber} from './withFavoriteNumber';
 
 function AppHocsPart(props) {
+  console.log(props);
     return (
-        <div>Hello world!</div>
+        <div>{props.favoriteNumber}</div>
     )
 }
 
-export default AppHocsPart
+export default withFavoriteNumber(AppHocsPart)

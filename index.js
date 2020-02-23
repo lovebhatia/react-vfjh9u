@@ -12,4 +12,4 @@ import AppHocsPart from './HocsPart3/AppHocsPart';
 
 
 
-render(<AppHocsPart></AppHocsPart>, document.getElementById('root'));
+render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));

@@ -8,6 +8,12 @@ import React from "react"
  * 
  * Then, in App.js, render that favorite number to the screen
  */
-export function withFavoriteNumber() {
-    return ???
+export function withFavoriteNumber(component) {
+  const C=component;
+    return function(props)
+    {
+      return(
+        <C favoriteNumber={42}{...props}/>
+      )
+    }
 }
