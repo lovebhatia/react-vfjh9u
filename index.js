@@ -14,4 +14,4 @@ import AppRenderProps2 from './RenderProps2/AppRenderProps2'
 
 
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
-render(<AppRenderProps2></AppRenderProps2>, document.getElementById('root'));
+render(<AppHocsPart1></AppHocsPart1>, document.getElementById('root'));

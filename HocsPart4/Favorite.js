@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import {withToggler} from "./Hocs/withToggler"
 
 class Favorite extends Component {
     state = {
@@ -29,4 +30,5 @@ class Favorite extends Component {
     }
 }
 
-export default Favorite
+const SuperchargedFavoriteComponent = withToggler(Favorite)
+export default SuperchargedFavoriteComponent
