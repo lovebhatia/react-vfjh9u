@@ -5,7 +5,7 @@ import Favorite from "./Favorite"
 function AppHocsPart1() {
     return (
         <div>
-            <Menu />
+            <Menu something="whatever" />
             <hr />
             <Favorite />
         </div>

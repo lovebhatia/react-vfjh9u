@@ -11,7 +11,8 @@ import AppReactChildrenPractise from './ReactChildrenpractise/AppReactChildrenPr
 import AppHocsPart from './HocsPart3/AppHocsPart';
 import AppHocsPart1 from './HocsPart4/AppHocsPart1';
 import AppRenderProps2 from './RenderProps2/AppRenderProps2'
+import AppHocsLove from './HocsLovePractise/AppHocsLove'
 
 
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
-render(<AppHocsPart1></AppHocsPart1>, document.getElementById('root'));
+render(<AppHocsLove></AppHocsLove>, document.getElementById('root'));
