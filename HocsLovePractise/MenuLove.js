@@ -21,8 +21,8 @@ class MenuLove extends Component
     {
       return(
         <div>
-      <button onclick={this.toggleShow}> {this.state.show ? "hide" : "show"} Menu</button>
-      <nav style={{display : this.state.show ? "block" : "none"}}>
+      <button onClick={this.toggleShow}> {this.state.show ? "Hide" : "Show"} Menu</button>
+      <nav style={{display : this.state.show ? "block" : "none"}} >
       <h6>Signed in as Coder123</h6>
        <a>Your Profile</a>
         <a>Your Repositories</a>
@@ -34,3 +34,6 @@ class MenuLove extends Component
     }
 }
 export default MenuLove;
+
+
+//A block element fills the entire line, and nothing can be displayed on its left or right side. ... However, if you set display:none , it hides the entire element, while visibility:hidden means that the contents of the element will be invisible, but the element stays in its original position and size
