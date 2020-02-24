@@ -1,9 +1,7 @@
-import React from 'react';
-function Example(props)
-{
-  return(
-    <h3> hi {props.name} </h3>
-  )
+import React from "react"
+
+function Example(props) {
+    return <h1>Hi {props.name}</h1>
 }
 
-export deafult Example;
+export default Example
