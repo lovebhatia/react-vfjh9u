@@ -1,10 +1,12 @@
-import React,{Component} from 'React';
+import React,{Component} from 'react';
 
 class FavoriteLove extends Component
 {
     render()
     {
-      <button>Menu</button>
+      return(
+      <button>Favorite</button>
+      )
     }
 }
 export default FavoriteLove;

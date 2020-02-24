@@ -6,7 +6,9 @@ function AppHocsLove()
   return(
     <div>
     <MenuLove/>
-    <Favoritelove/>
+    <FavoriteLove/>
     </div>
   )
 }
+
+export default AppHocsLove;
