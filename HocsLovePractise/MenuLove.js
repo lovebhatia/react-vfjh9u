@@ -8,6 +8,7 @@ class MenuLove extends Component
 
   toggleShow = () =>
   {
+    console.log('test');
     this.setState(prevState =>
     {
       return{

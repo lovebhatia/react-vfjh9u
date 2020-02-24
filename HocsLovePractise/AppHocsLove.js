@@ -6,6 +6,7 @@ function AppHocsLove()
   return(
     <div>
     <MenuLove/>
+    <hr/>
     <FavoriteLove/>
     </div>
   )
