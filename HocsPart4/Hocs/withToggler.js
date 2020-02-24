@@ -1,5 +1,5 @@
 import React from  'react';
-export function withToggles(component)
+export function withToggler(component)
 {
   return function(props)
   {
