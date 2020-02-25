@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import {withToggler} from "./HocsToggle/withToggler"
 
 class MenuLove extends Component
 {
@@ -35,7 +36,7 @@ class MenuLove extends Component
 }
 
 
-export default MenuLove;
+export default withToggler(MenuLove);
 
 
 //A block element fills the entire line, and nothing can be displayed on its left or right side. ... However, if you set display:none , it hides the entire element, while visibility:hidden means that the contents of the element will be invisible, but the element stays in its original position and size
