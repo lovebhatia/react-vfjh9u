@@ -1,15 +1,15 @@
-import React from 'react'
-import MenuLove from './MenuLove'
-import FavoriteLove from './FavoriteLove'
-function AppHocsLove()
-{
-  return(
-    <div>
-    <MenuLove something="whatever"/>
-    <hr/>
-    <FavoriteLove/>
-    </div>
-  )
+import React from "react"
+import Menu from "./Menu"
+import Favorite from "./Favorite"
+
+function AppHocsLove() {
+   return (
+        <div>
+            <Menu something="whatever" />
+            <hr />
+            <Favorite />
+        </div>
+    )
 }
 
-export default AppHocsLove;
+export default AppHocsLove

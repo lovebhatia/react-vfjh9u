@@ -1,8 +1,8 @@
-import React,{Component} from 'react';
+import React, {Component} from "react"
 import {withToggler} from "./HocsToggle/withToggler"
-class FavoriteLove extends Component
-{
-  state = {
+
+class Favorite extends Component {
+    state = {
         isFavorited: false
     }
     
@@ -13,23 +13,22 @@ class FavoriteLove extends Component
             }
         })
     }
-
-    render()
-    {
-      return(
-      <div>
-      <h3> click heart to favorite</h3>
-      <h1>
-     <span 
+    
+    render() {
+        return (
+            <div>
+                <h3>Click heart to favorite</h3>
+                <h1>
+                    <span 
                         onClick={this.toggleFavorite}
                     >
                         {this.state.isFavorited ? "❤️" : "♡"}
                     </span>
-                    </h1>
-      </div>
-      )
+                </h1>
+            </div>
+        ) 
     }
 }
 
-const withSuperchargeFavoriteLove=withToggler(FavoriteLove)
-export default withSuperchargeFavoriteLove;
+const SuperchargedFavoriteComponent = withToggler(Favorite)
+export default SuperchargedFavoriteComponent
