@@ -5,7 +5,11 @@ function AppRenderProps2() {
     return (
         <div>
             
-            <Example name ={function() {return "hey there"}}/>
+            <Example name ={
+              function(name) {
+                return<h1>hey there,{name}</h1>
+                } 
+              }/>
         </div>
     )
 }

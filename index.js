@@ -15,4 +15,4 @@ import AppHocsLove from './HocsLovePractise/AppHocsLove'
 
 
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
-render(<AppHocsLove></AppHocsLove>, document.getElementById('root'));
+render(<AppRenderProps2></AppRenderProps2>, document.getElementById('root'));
