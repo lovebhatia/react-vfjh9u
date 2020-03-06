@@ -12,7 +12,8 @@ import AppHocsPart from './HocsPart3/AppHocsPart';
 import AppHocsPart1 from './HocsPart4/AppHocsPart1';
 import AppRenderProps2 from './RenderProps2/AppRenderProps2'
 import AppHocsLove from './HocsLovePractise/AppHocsLove'
+import AppCompUpdate from './ShoulComponentUpdate/AppCompUpdate'
 
 
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
-render(<AppRenderProps2></AppRenderProps2>, document.getElementById('root'));
+render(<AppCompUpdate></AppCompUpdate>, document.getElementById('root'));
