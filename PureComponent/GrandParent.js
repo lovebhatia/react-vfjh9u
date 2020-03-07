@@ -1,7 +1,7 @@
-import React, {Component} from "react"
+import React, {PureComponent} from "react"
 import Parent from "./Parent"
 
-class GrandParent extends Component {  
+class GrandParent extends PureComponent {  
   
 
     render() {

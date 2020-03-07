@@ -13,8 +13,8 @@ class AppCompUpdate extends Component {
                 <button onClick={this.increment}>+1</button>
                 <h2>{this.state.count}</h2>
                 <p>I'm the App component</p>
-                <GrandParent count />
-                <GrandParent count/>
+                <GrandParent />
+                <GrandParent/>
             </div>
         )    
     }
