@@ -13,7 +13,7 @@ import AppHocsPart1 from './HocsPart4/AppHocsPart1';
 import AppRenderProps2 from './RenderProps2/AppRenderProps2'
 import AppHocsLove from './HocsLovePractise/AppHocsLove'
 import AppCompUpdate from './ShoulComponentUpdate/AppCompUpdate'
-import AppPureComponent from './PureComponent/AppPureComponent'
+import AppReactMemo from './ReactMemo/AppReactMemo'
 
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
-render(<AppPureComponent></AppPureComponent>, document.getElementById('root'));
+render(<AppReactMemo></AppReactMemo>, document.getElementById('root'));

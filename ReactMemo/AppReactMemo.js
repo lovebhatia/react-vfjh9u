@@ -1,10 +1,10 @@
-import React, {PureComponent} from "react"
+import React, {Component} from "react"
 import GrandParent from "./GrandParent"
 
-class AppPureComponent extends PureComponent {
+class AppReactMemo extends Component {
     state = { count: 0 }
     
-    increment = () => this.setState(prevState => ({count: prevState.count+1}))
+    increment = () => this.setState(prevState => ({count: prevState.count + 1}))
     
     render() {
         console.log("[GP] [P] [C] [GC] APP just rendered")
@@ -13,11 +13,12 @@ class AppPureComponent extends PureComponent {
                 <button onClick={this.increment}>+1</button>
                 <h2>{this.state.count}</h2>
                 <p>I'm the App component</p>
-                <GrandParent count={this.state.count}  />
-                <GrandParent />
+                <GrandParent count={this.state.count
+                } />
+                <GrandParent/>
             </div>
         )    
     }
 }
 
-export default AppPureComponent
+export default AppReactMemo
