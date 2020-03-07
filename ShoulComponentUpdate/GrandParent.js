@@ -2,14 +2,18 @@ import React, {Component} from "react"
 import Parent from "./Parent"
 
 class GrandParent extends Component {  
+  
+  /*
   shouldComponentUpdate(nextProps, nextState)
   {
-    if(nextProps.count === this.nextProps.count)
+    if(nextProps.count === this.props.count)
     {
       return false;
     }
     return true;
   }  
+*/
+
 
     render() {
         console.log("[👴🏼]   [ ]   [ ]   [ ] rendered")
