@@ -3,7 +3,7 @@ import Parent from "./Parent"
 
 class GrandParent extends Component {  
   
-  /*
+
   shouldComponentUpdate(nextProps, nextState)
   {
     if(nextProps.count === this.props.count)
@@ -12,7 +12,7 @@ class GrandParent extends Component {
     }
     return true;
   }  
-*/
+
 
 
     render() {
