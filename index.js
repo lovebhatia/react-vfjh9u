@@ -16,5 +16,6 @@ import AppCompUpdate from './ShoulComponentUpdate/AppCompUpdate'
 import AppReactMemo from './ReactMemo/AppReactMemo'
 import AppContextProvider from './ReactContext/ContextProvider/AppContextProvider';
 
+const themeContext=React.createContext();
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
-render(<AppContextProvider></AppContextProvider>, document.getElementById('root'));
+render(<themeContext.Provider value={"light"}><AppContextProvider></AppContextProvider></ themeContext.Provider>, document.getElementById('root'));
