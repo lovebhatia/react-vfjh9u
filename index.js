@@ -18,10 +18,13 @@ import AppContextProvider from './ReactContext/ContextProvider/AppContextProvide
 import ThemeContext from './ReactContext/ContextProvider/themeContext';
 import AppContextPractise from './ReactContext/ContextPractise1/AppContextPractise'
 import UserNameContext from './ReactContext/ContextPractise1/UserNameContext'
+import ThemeContextConsumer from './ReactContext/ContextConsumer/themeContext'
+import AppContextConsumer from './ReactContext/ContextConsumer/AppContextConsumer'
 
 //const themeContext=React.createContext();
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
 
 //render(<ThemeContext.Provider value={"dark"}><AppContextProvider></AppContextProvider></ ThemeContext.Provider>, document.getElementById('root'));
-render(<UserNameContext.Provider value={"love"}><AppContextPractise></AppContextPractise></UserNameContext.Provider>, 
-document.getElementById('root'));
+//render(<UserNameContext.Provider value={"love"}><AppContextPractise></AppContextPractise></UserNameContext.Provider>, 
+//document.getElementById('root'));
+render(<ThemeContextConsumer.Provider value={"da"}><AppContextConsumer></AppContextConsumer></ ThemeContextConsumer.Provider>, document.getElementById('root'));
