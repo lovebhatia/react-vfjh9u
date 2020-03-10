@@ -3,10 +3,15 @@ import ThemeContext from "./themeContext"
 
 class Button extends Component {
     render() {
+      console.log(this.context);
+      const theme=this.context
         return (
-            <button className="light-theme">Switch Theme</button>
+           //<button className={`${this.context}-theme`}>Switch Theme</button>
+           <button className={`${theme}-theme`}>Switch Theme</button>
+
         )    
     }
 }
 
+Button.contextType=ThemeContext;
 export default Button
