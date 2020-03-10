@@ -15,8 +15,12 @@ import AppHocsLove from './HocsLovePractise/AppHocsLove'
 import AppCompUpdate from './ShoulComponentUpdate/AppCompUpdate'
 import AppReactMemo from './ReactMemo/AppReactMemo'
 import AppContextProvider from './ReactContext/ContextProvider/AppContextProvider';
-import ThemeContext from './ReactContext/ContextProvider/themeContext'
+import ThemeContext from './ReactContext/ContextProvider/themeContext';
+import AppContextPractise from './ReactContext/ContextPractise1/AppContextPractise'
 
 //const themeContext=React.createContext();
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
-render(<ThemeContext.Provider value={"dark"}><AppContextProvider></AppContextProvider></ ThemeContext.Provider>, document.getElementById('root'));
+
+//render(<ThemeContext.Provider value={"dark"}><AppContextProvider></AppContextProvider></ ThemeContext.Provider>, document.getElementById('root'));
+render(<AppContextPractise></AppContextPractise>, 
+document.getElementById('root'));
