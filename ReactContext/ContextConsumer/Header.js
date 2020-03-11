@@ -6,7 +6,7 @@ function Header() {
     
        
         return (
-          <ThemeContextConsumer>
+          <ThemeContextConsumer.Consumer>
           {
             theme =>(
                 <header className={`${theme}-theme`}>
@@ -14,7 +14,7 @@ function Header() {
             </header>
             )
           }
-       </ThemeContextConsumer>
+       </ThemeContextConsumer.Consumer>
         )    
     }
 
