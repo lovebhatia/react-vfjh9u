@@ -27,4 +27,4 @@ import AppContextConsumer from './ReactContext/ContextConsumer/AppContextConsume
 //render(<ThemeContext.Provider value={"dark"}><AppContextProvider></AppContextProvider></ ThemeContext.Provider>, document.getElementById('root'));
 //render(<UserNameContext.Provider value={"love"}><AppContextPractise></AppContextPractise></UserNameContext.Provider>, 
 //document.getElementById('root'));
-render(<ThemeContextConsumer.Provider value={"da"}><AppContextConsumer></AppContextConsumer></ ThemeContextConsumer.Provider>, document.getElementById('root'));
+render(<ThemeContextConsumer.Provider value={"dark"}><AppContextConsumer></AppContextConsumer></ ThemeContextConsumer.Provider>, document.getElementById('root'));

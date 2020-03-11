@@ -8,13 +8,18 @@ function AppContextConsumer() {
         <div>
         
             <Header />
-            <ThemeContextConsumer.consumer>
-            <Button />
-            </ThemeContextConsumer.consumer>
-            <Button />
+            <ThemeContextConsumer.Consumer>
+            {theme => (
+                <Button theme={theme}/>
+              )
+            }
+            </ThemeContextConsumer.Consumer>
+            <Button theme="light"/>
             <Button />
         </div>
     )
 }
 
 export default AppContextConsumer
+            //we have done it by using render props.
+

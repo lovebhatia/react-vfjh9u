@@ -1,15 +1,15 @@
 import React from "react"
-import ThemeContext from "./themeContext"
+import ThemeContextConsumer from "./themeContext"
 
 function Button(props) {
     return (
-      <ThemeContext.Consumer>
-      {
-        theme => (
-            <button className={`${theme}-theme`}>Switch Theme</button>
-        )
-      }
-        </ThemeContext.Consumer>
+      //<ThemeContextConsumer.Consumer>{
+        //theme => (
+       //     <button className={`${theme}-theme`}>Switch Theme</button>
+        //)
+     // }
+     <button className={`${props.theme}-theme`}>Switch Thme</button>
+        /</ThemeContextConsumer.Consumer>
     )    
 }
 
