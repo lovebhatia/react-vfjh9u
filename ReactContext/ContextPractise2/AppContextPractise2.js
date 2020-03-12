@@ -3,7 +3,32 @@ import React from "react"
 import Header from "./Header"
 import UserContext from "./UserContext"
 
-class AppContextPractise2 extends React.Component {
+
+/**
+ * Challenge:
+ * 
+ * 1. Convert App and Header back into functional components
+ * 2. Use UserContext.Consumer to consume the username context in both places
+ */
+
+function AppContextPractise2(props)
+{
+  return(
+    <div>
+    <Header/>
+    <UserContext.Consumer>{
+      username => (
+    <p className="main">No New Notification,{props.username}! </p>
+      )
+    }
+  
+    <UserContext.Consumer>
+    </div>
+  )
+}
+
+
+/*class AppContextPractise2 extends React.Component {
     static contextType = UserContext
     
     render() {
@@ -18,5 +43,5 @@ class AppContextPractise2 extends React.Component {
         )
     }
 }
-
+*/
 export default AppContextPractise2

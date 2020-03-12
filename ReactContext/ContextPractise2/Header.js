@@ -1,7 +1,17 @@
-    import React, {Component} from "react"
+import React, {Component} from "react"
 import UserContext from "./UserContext"
 
-class Header extends Component {
+
+function Header(props)
+{
+  return(
+    <header>
+    <p>Welcome, {props.username}!</p>
+    </header>
+  )
+}
+
+/*class Header extends Component {
     static contextType = UserContext
     
     render() {
@@ -13,5 +23,5 @@ class Header extends Component {
         )    
     }
 }
-
+*/
 export default Header

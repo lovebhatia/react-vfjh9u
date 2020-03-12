@@ -31,4 +31,4 @@ import UserContext from './ReactContext/ContextPractise2/UserContext'
 //document.getElementById('root'));
 //render(<ThemeContextConsumer.Provider value={"dark"}><AppContextConsumer></AppContextConsumer></ ThemeContextConsumer.Provider>, document.getElementById('root'));
 
-render(<UserContext.Provider value={"love BHati"}><AppContextPractise2></AppContextPractise2></UserContext.Provider>,document.getElementById('root'));
+render(<UserContext.Provider value={"love BHatia"}><AppContextPractise2></AppContextPractise2></UserContext.Provider>,document.getElementById('root'));
