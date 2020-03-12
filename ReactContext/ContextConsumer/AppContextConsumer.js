@@ -14,7 +14,7 @@ function AppContextConsumer() {
               )
             }
             </ThemeContextConsumer.Consumer>
-            <Button theme="light"/>
+            <Button theme="monkey"/>
             <Button />
         </div>
     )
