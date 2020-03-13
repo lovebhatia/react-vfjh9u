@@ -16,13 +16,16 @@ function AppContextPractise2(props)
   return(
     <div>
     <Header/>
-    <UserContext.Consumer>{
-      username => (
-    <p className="main">No New Notification,{props.username}! </p>
-      )
+    <main>
+    <UserContext.Consumer>
+    {
+    username =>(
+      <p className="main">No New Notification, {username}!</p>
+    )
     }
   
-    <UserContext.Consumer>
+    </UserContext.Consumer>
+    </main>
     </div>
   )
 }
