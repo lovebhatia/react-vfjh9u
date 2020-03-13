@@ -9,7 +9,7 @@ function Header(props)
     <UserContext.Consumer>
     {
       username =>(
-        <p>Welcome, {.username}!</p>
+        <p>Welcome, {username}!</p>
 
       )
     }
