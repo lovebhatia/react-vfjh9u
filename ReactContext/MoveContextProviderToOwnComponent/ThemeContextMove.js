@@ -1,12 +1,16 @@
 import React,{Component} from "react"
-const ThemeContextMove = React.createContext()
-class ThemeContextProvider extends component{
+const {Provider,Consumer} = React.createContext();
+
+class ThemeContextMove extends component{
   render()
   {
     return(
+      <Provider value={"light"}>
+      {this.props.children}
+      </Provider>
 
     )
   }
 }
 
-export default ThemeContextMove
+export {ThemeContextMove, Consumer as ThemeContextMove}

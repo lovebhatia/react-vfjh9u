@@ -22,6 +22,8 @@ import ThemeContextConsumer from './ReactContext/ContextConsumer/themeContext'
 import AppContextConsumer from './ReactContext/ContextConsumer/AppContextConsumer'
 import AppContextPractise2 from './ReactContext/ContextPractise2/AppContextPractise2'
 import UserContext from './ReactContext/ContextPractise2/UserContext'
+import ThemeContextMove from './ReactContext/MoveContextProviderToOwnComponent/ThemeContextMove'
+import AppContextProviderMove from './ReactContext/MoveContextProviderToOwnComponent/AppContextProviderMove'
 
 //const themeContext=React.createContext();
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
@@ -31,4 +33,6 @@ import UserContext from './ReactContext/ContextPractise2/UserContext'
 //document.getElementById('root'));
 //render(<ThemeContextConsumer.Provider value={"dark"}><AppContextConsumer></AppContextConsumer></ ThemeContextConsumer.Provider>, document.getElementById('root'));
 
-render(<UserContext.Provider value={"love BHatia"}><AppContextPractise2></AppContextPractise2></UserContext.Provider>,document.getElementById('root'));
+//render(<UserContext.Provider value={"love BHatia"}><AppContextPractise2></AppContextPractise2></UserContext.Provider>,document.getElementById('root'));
+
+render(<ThemeContextMove value={"light"}><AppContextProviderMove/></ThemeContextMove>,document.getElementById("root"))

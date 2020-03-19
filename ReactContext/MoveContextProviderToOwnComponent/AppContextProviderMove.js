@@ -3,7 +3,7 @@ import React from "react"
 import Header from "./Header"
 import Button from "./Button"
 
-function AppContextProvider() {
+function AppContextProviderMove() {
     return (
         <div>
             <Header />
@@ -12,4 +12,4 @@ function AppContextProvider() {
     )
 }
 
-export default AppContextProvider 
+export default AppContextProviderMove 
