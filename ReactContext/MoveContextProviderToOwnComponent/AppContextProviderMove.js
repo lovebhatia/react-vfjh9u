@@ -6,8 +6,7 @@ import Button from "./Button"
 function AppContextProviderMove() {
     return (
         <div>
-            <Header />
-            <Button />
+            
         </div>
     )
 }
