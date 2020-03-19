@@ -28,6 +28,9 @@ import AppContextProviderMove from './ReactContext/ContextProOwnComponent/AppCon
 import {ThemeContextProviderChange} from './ReactContext/changingContext/themeContextChange'
 import AppContextChange from './ReactContext/changingContext/AppContextChange'
 
+
+
+
 //const themeContext=React.createContext();
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
 
