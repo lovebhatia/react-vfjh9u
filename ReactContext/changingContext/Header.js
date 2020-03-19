@@ -3,10 +3,10 @@ import {ThemeContextConsumerChange} from "./themeContextChange"
 
 function Header(props) {
     return (
-        <ThemeContextConsumerChange>
-            {theme => (
-                <header className={`${theme}-theme`}>
-                    <h2>{theme === "light" ? "Light" : "Dark"} Theme</h2>
+       <ThemeContextConsumerChange>
+            {context => (
+                <header className={`${context.theme}-theme`}>
+                    <h2>{context.theme === "light" ? "Light" : "Dark"} Theme</h2>
                 </header>
             )}
         </ThemeContextConsumerChange>
@@ -14,3 +14,4 @@ function Header(props) {
 }
 
 export default Header
+
