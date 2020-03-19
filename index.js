@@ -25,6 +25,9 @@ import UserContext from './ReactContext/ContextPractise2/UserContext'
 import {ThemeContextProviderMove} from './ReactContext/ContextProOwnComponent/themecontext'
 import AppContextProviderMove from './ReactContext/ContextProOwnComponent/AppContextProviderMove'
 
+import {ThemeContextProviderChange} from './ReactContext/changingContext/themeContextChange'
+import AppContextChange from './ReactContext/changingContext/AppContextChange'
+
 //const themeContext=React.createContext();
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
 
@@ -35,4 +38,5 @@ import AppContextProviderMove from './ReactContext/ContextProOwnComponent/AppCon
 
 //render(<UserContext.Provider value={"love BHatia"}><AppContextPractise2></AppContextPractise2></UserContext.Provider>,document.getElementById('root'));
 
-render(<ThemeContextProviderMove ><AppContextProviderMove/></ThemeContextProviderMove>,document.getElementById("root"))
+//render(<ThemeContextProviderMove ><AppContextProviderMove/></ThemeContextProviderMove>,document.getElementById("root"))
+render(<ThemeContextProviderChange ><AppContextChange/></ThemeContextProviderChange>,document.getElementById("root"))
