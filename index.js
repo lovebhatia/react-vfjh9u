@@ -22,8 +22,8 @@ import ThemeContextConsumer from './ReactContext/ContextConsumer/themeContext'
 import AppContextConsumer from './ReactContext/ContextConsumer/AppContextConsumer'
 import AppContextPractise2 from './ReactContext/ContextPractise2/AppContextPractise2'
 import UserContext from './ReactContext/ContextPractise2/UserContext'
-import ThemeContextMove from './ReactContext/MoveContextProviderToOwnComponent/ThemeContextMove'
-import AppContextProviderMove from './ReactContext/MoveContextProviderToOwnComponent/AppContextProviderMove'
+import ThemeContextMove from './ReactContext/ContextProOwnComponent/ThemeContextMove'
+import AppContextProviderMove from './ReactContext/ContextProOwnComponent/AppContextProviderMove'
 
 //const themeContext=React.createContext();
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
