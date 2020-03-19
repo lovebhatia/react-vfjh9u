@@ -1,11 +1,11 @@
-import React from "react"
+ import React from "react"
 import {ThemeContextConsumerChange} from "./themeContextChange"
 
 function Button(props) {
     return (
         <ThemeContextConsumerChange>
-            {theme => (
-                <button className={`${theme}-theme`}>Switch Theme</button>
+            {context => (
+                <button onClick={context.toggleTheme} className={`${context.theme}-theme`}>Switch Theme</button>
             )}
         </ThemeContextConsumerChange>
     )    
