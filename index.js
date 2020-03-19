@@ -22,7 +22,7 @@ import ThemeContextConsumer from './ReactContext/ContextConsumer/themeContext'
 import AppContextConsumer from './ReactContext/ContextConsumer/AppContextConsumer'
 import AppContextPractise2 from './ReactContext/ContextPractise2/AppContextPractise2'
 import UserContext from './ReactContext/ContextPractise2/UserContext'
-import ThemeContextMove from './ReactContext/ContextProOwnComponent/ThemeContextMove'
+import {ThemeContextProviderMove} from './ReactContext/ContextProOwnComponent/themecontext'
 import AppContextProviderMove from './ReactContext/ContextProOwnComponent/AppContextProviderMove'
 
 //const themeContext=React.createContext();
@@ -35,4 +35,4 @@ import AppContextProviderMove from './ReactContext/ContextProOwnComponent/AppCon
 
 //render(<UserContext.Provider value={"love BHatia"}><AppContextPractise2></AppContextPractise2></UserContext.Provider>,document.getElementById('root'));
 
-render(<ThemeContextMove value={"light"}><AppContextProviderMove/></ThemeContextMove>,document.getElementById("root"))
+render(<ThemeContextProviderMove ><AppContextProviderMove/></ThemeContextProviderMove>,document.getElementById("root"))
