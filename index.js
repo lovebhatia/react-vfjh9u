@@ -28,6 +28,7 @@ import {ThemeContextProviderChange} from './ReactContext/changingContext/themeCo
 import AppContextChange from './ReactContext/changingContext/AppContextChange'
 import AppUseState1 from './ReactHooks/useState1CreatingState/AppUseState1'
 import AppUseState2 from './ReactHooks/useState2ChangingState/AppUseState2'
+import AppComplexChangeState from './ReactHooks/useState3ChangingMoreComplexState/AppComplexChangeState'
 
 
 
@@ -46,3 +47,5 @@ import AppUseState2 from './ReactHooks/useState2ChangingState/AppUseState2'
 
 //render(<AppUseState1/>,document.getElementById("root"));
 render(<AppUseState2/>,document.getElementById("root"));
+render(<AppComplexChangeState/>,document.getElementById("root"));
+
