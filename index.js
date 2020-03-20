@@ -27,6 +27,7 @@ import AppContextProviderMove from './ReactContext/ContextProOwnComponent/AppCon
 
 import {ThemeContextProviderChange} from './ReactContext/changingContext/themeContextChange'
 import AppContextChange from './ReactContext/changingContext/AppContextChange'
+import AppUseState1 from './ReactHooks/useState1/AppUseState1'
 
 
 
@@ -42,4 +43,6 @@ import AppContextChange from './ReactContext/changingContext/AppContextChange'
 //render(<UserContext.Provider value={"love BHatia"}><AppContextPractise2></AppContextPractise2></UserContext.Provider>,document.getElementById('root'));
 
 //render(<ThemeContextProviderMove ><AppContextProviderMove/></ThemeContextProviderMove>,document.getElementById("root"))
-render(<ThemeContextProviderChange ><AppContextChange/></ThemeContextProviderChange>,document.getElementById("root"))
+//render(<ThemeContextProviderChange ><AppContextChange/></ThemeContextProviderChange>,document.getElementById("root"))
+
+render(<AppUseState1/>,document.getElementById("root"));

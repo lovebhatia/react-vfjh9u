@@ -12,7 +12,7 @@ class  AppContextPractise extends Component
   return (
 
     <div>
-    <Header/>
+    <Header/> 
     <main>
     <p className="main">No new Notification, {username} ! 🎉</p>
     </main>
