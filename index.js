@@ -27,8 +27,8 @@ import AppContextProviderMove from './ReactContext/ContextProOwnComponent/AppCon
 
 import {ThemeContextProviderChange} from './ReactContext/changingContext/themeContextChange'
 import AppContextChange from './ReactContext/changingContext/AppContextChange'
-import AppUseState1 from './ReactHooks/useState1/AppUseState1'
-import AppUseState2 from './ReactHooks/useState2/AppUseState2'
+import AppUseState1 from './ReactHooks/useState1CreatingState/AppUseState1'
+import AppUseState2 from './ReactHooks/useState2ChangingState/AppUseState2'
 
 
 
