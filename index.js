@@ -28,7 +28,7 @@ import AppContextProviderMove from './ReactContext/ContextProOwnComponent/AppCon
 import {ThemeContextProviderChange} from './ReactContext/changingContext/themeContextChange'
 import AppContextChange from './ReactContext/changingContext/AppContextChange'
 import AppUseState1 from './ReactHooks/useState1/AppUseState1'
-
+import AppUseState2 from './ReactHooks/useState2/AppUseState2'
 
 
 
@@ -45,4 +45,5 @@ import AppUseState1 from './ReactHooks/useState1/AppUseState1'
 //render(<ThemeContextProviderMove ><AppContextProviderMove/></ThemeContextProviderMove>,document.getElementById("root"))
 //render(<ThemeContextProviderChange ><AppContextChange/></ThemeContextProviderChange>,document.getElementById("root"))
 
-render(<AppUseState1/>,document.getElementById("root"));
+//render(<AppUseState1/>,document.getElementById("root"));
+render(<AppUseState2/>,document.getElementById("root"));
