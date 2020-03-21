@@ -20,10 +20,13 @@ function AppSpeedTypingGame()
 
 //as a recap useEffect will run when the component first mounts and then it will run anytime the time reamining changes. whats kind of cool about that is we can use seTimeout simply wait for 1 sec change the time remaining which will change the 
   useEffect( () => {
+    if(timeRemaining>0)
+    {
+
     setTimeout( () => {
       setTimeRemaining(time => time-1)
     },1000)
-
+    }
   },[timeRemaining])
 
   console.log(text)

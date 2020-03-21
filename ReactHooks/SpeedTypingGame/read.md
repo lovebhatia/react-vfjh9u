@@ -35,5 +35,7 @@
  *    a lot of extra work.
  * 
  *    Warning: there will be a bug in this, but we'll tackle that next
+  * 3. Make it so the effect won't run if the time is already at 0
+
  */
  */
