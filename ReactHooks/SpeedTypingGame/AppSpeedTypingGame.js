@@ -1,11 +1,12 @@
 
-import React,{useState,useEffect} from "react"
+import React,{useState,useEffect,useRef} from "react"
 function AppSpeedTypingGame()
 { 
   const satrtingType=5
   const [text,setText]=useState("");
   const [timeRemaining,setTimeRemaining]=useState(satrtingType);
   const [isTimeRunning,setIsTimeRunnig]=useState(false);
+  const inputRef=useRef(null)
 //keeping track of word count is going to required me to save the word count in state.
   const [wordCount,setWordCount]=useState(0);
 
@@ -26,6 +27,11 @@ function AppSpeedTypingGame()
     setIsTimeRunnig(true)
     setTimeRemaining(satrtingType)
     setText("");
+            in.current.disabled = false
+
+    inputRef.current.focus()
+    //here reacct will asynchronously change state which means its not going to stop the other lines of this code from happening while its in the process of changing state as such we are trying to focus on disabled text area 
+
   }
   function endGame() {
        // setIsTimeRunning(false)
@@ -62,7 +68,7 @@ function AppSpeedTypingGame()
   return(
     <div>
     <h1>How fast do you type?</h1>
-    <textarea onChange={handleChange}
+    <textarea ref={inputRef} onChange={handleChange}
     value={text} disabled={!isTimeRunning}/>
     <h4>Time reminaing: {timeRemaining}</h4>
     <button onClick={startGame} disabled={isTimeRunning}>Start</button>

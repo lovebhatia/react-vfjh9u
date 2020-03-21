@@ -24,7 +24,7 @@ function AppUseRef()
   return(
     <div>
       <form>
-      <input ref={inputR}type="text" name="todo" value={newToDoValue} onChange={handleChange}></input>
+      <input ref={inputRef} type="text" name="todo" value={newToDoValue} onChange={handleChange}></input>
       <button onClick={addToDo}>Add To Do Item</button>
       </form>
       {allTodos}

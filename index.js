@@ -55,8 +55,8 @@ import AppUseRef from
 //render(<AppUseState2/>,document.getElementById("root"));
 //render(<AppComplexChangeState/>,document.getElementById("root"));
 //render(<AppUseEffect1/>,document.getElementById("root"));
-//render(<AppSpeedTypingGame/>,document.getElementById("root"));
-render(<AppUseRef/>,document.getElementById("root"))
+render(<AppSpeedTypingGame/>,document.getElementById("root"));
+//render(<AppUseRef/>,document.getElementById("root"))
 
 
 
