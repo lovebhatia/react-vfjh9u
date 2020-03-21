@@ -31,6 +31,8 @@ import AppUseState2 from './ReactHooks/useState2ChangingState/AppUseState2'
 import AppComplexChangeState from './ReactHooks/useState3ChangingMoreComplexState/AppComplexChangeState'
 import AppUseEffect1 from 
 './ReactHooks/UseEffect1/AppUseEffect1'
+import AppSpeedTypingGame from 
+'./ReactHooks/SpeedTypingGame/AppSpeedTypingGame'
 
 
 //const themeContext=React.createContext();
@@ -49,6 +51,8 @@ import AppUseEffect1 from
 //render(<AppUseState1/>,document.getElementById("root"));
 //render(<AppUseState2/>,document.getElementById("root"));
 //render(<AppComplexChangeState/>,document.getElementById("root"));
-render(<AppUseEffect1/>,document.getElementById("root"));
+//render(<AppUseEffect1/>,document.getElementById("root"));
+render(<AppSpeedTypingGame/>,document.getElementById("root"));
+
 
 
