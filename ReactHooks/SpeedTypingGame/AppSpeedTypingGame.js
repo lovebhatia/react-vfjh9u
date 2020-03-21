@@ -2,9 +2,13 @@
 import React,{useState,useEffect} from "react"
 function AppSpeedTypingGame()
 { 
+  const satrtingType=5
   const [text,setText]=useState("");
-  const [timeRemaining,setTimeRemaining]=useState(5);
+  const [timeRemaining,setTimeRemaining]=useState(satrtingType);
   const [isTimeRunning,setIsTimeRunnig]=useState(false);
+//keeping track of word count is going to required me to save the word count in state.
+  const [wordCount,setWordCount]=useState(0);
+
   function handleChange(event)
   {
       const {value}=event.target;
@@ -13,10 +17,24 @@ function AppSpeedTypingGame()
   }
   function calculateWordCount(text)
   {
-      const wordsArr=text.trim.split(" ")
+      const wordsArr=text.trim().split(" ")
       console.log(wordsArr.length)
       return wordsArr.filter(word => word !== "").length
   }
+  function startGame()
+  {
+    setIsTimeRunnig(true)
+    setTimeRemaining()
+    setText("");
+  }
+  function endGame() {
+       // setIsTimeRunning(false)
+       // setWordCount(calculateWordCount(text))
+        setIsTimeRunnig(false)
+          const numWords = calculateWordCount(text)
+          console.log(numWords);
+          setWordCount(numWords);
+    }
 
 
 //as a recap useEffect will run when the component first mounts and then it will run anytime the time reamining changes. whats kind of cool about that is we can use seTimeout simply wait for 1 sec change the time remaining which will change the 
@@ -29,7 +47,14 @@ function AppSpeedTypingGame()
     },1000)
     }
     else if(timeRemaining === 0) {
-            setIsTimeRunnig(false)
+             endGame()
+
+          //here we are not able to start our game while clicking on start button after one time it starts .
+          //lets go where the button atually get clicked here we simply setting setIsTimeRunning(true) but clicking the button is not gonna change the amount of tim remaining.
+
+          //lets have a another function for this. say startclock()
+
+
         }
   },[timeRemaining,isTimeRunning])
 
@@ -40,8 +65,8 @@ function AppSpeedTypingGame()
     <textarea onChange={handleChange}
     value={text}/>
     <h4>Time reminaing: {timeRemaining}</h4>
-    <button onClick={() => setIsTimeRunnig(true)}>Start</button>
-    <h1>Word count: ???</h1>
+    <button onClick={startGame}>Start</button>
+    <h1>Word count: {wordCount}</h1>
     </div>
   )
 
@@ -52,3 +77,4 @@ export default AppSpeedTypingGame;
     //here i cant just run calculatewordcount the beacuse the  eventlistener is going to pass the event to whatever function i run here. so i have to run a anonymous function then use calculateWordCount and then the text i passing in function referring to actual one in stage 
     //<button onClick={calculateWordCount}>Start</button>
   //      <button onClick={() => calculateWordCount(text)}>Start</button>
+//    <button onClick={() => setIsTimeRunnig(true)}>Start</button>
