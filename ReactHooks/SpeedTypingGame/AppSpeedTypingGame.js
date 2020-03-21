@@ -27,7 +27,7 @@ function AppSpeedTypingGame()
     setIsTimeRunnig(true)
     setTimeRemaining(satrtingType)
     setText("");
-            in.current.disabled = false
+            inputRef.current.disabled = false
 
     inputRef.current.focus()
     //here reacct will asynchronously change state which means its not going to stop the other lines of this code from happening while its in the process of changing state as such we are trying to focus on disabled text area 
