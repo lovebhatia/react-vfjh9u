@@ -63,7 +63,7 @@ function AppSpeedTypingGame()
     <div>
     <h1>How fast do you type?</h1>
     <textarea onChange={handleChange}
-    value={text}/>
+    value={text} disabled={!isTimeRunning}/>
     <h4>Time reminaing: {timeRemaining}</h4>
     <button onClick={startGame} disabled={isTimeRunning}>Start</button>
     <h1>Word count: {wordCount}</h1>
