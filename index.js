@@ -37,8 +37,7 @@ import AppUseRef from
 './ReactHooks/useref/AppUseRef'
 import AppUseContext from 
 './ReactHooks/useContext/AppUseContext'
-import ThemeContextUseStateProvider from 
-'./ReactHooks/useContext/themeContext'
+import ThemeContextUseStateProvider from './ReactHooks/useContext/themeContext'
 
 
 
@@ -62,7 +61,9 @@ import ThemeContextUseStateProvider from
 //render(<AppSpeedTypingGame/>,document.getElementById("root"));
 //render(<AppUseRef/>,document.getElementById("root"));
 
-render(<ThemeContextUseStateProvider value={"dark"}><AppUseContext></AppuseContext></ThemeContextUseStateProvider>, document.getElementById('root'));
+//render(<ThemeContextUseStateProvider><AppUseContext/>
+//</ThemeContextUseStateProvider>, document.getElementById('root'));
+render(<ThemeContextUseStateProvider><AppUseContext/></The,document.getElementById("root"))
 
 
 
