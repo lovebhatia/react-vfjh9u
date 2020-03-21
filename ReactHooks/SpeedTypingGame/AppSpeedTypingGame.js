@@ -24,7 +24,7 @@ function AppSpeedTypingGame()
   function startGame()
   {
     setIsTimeRunnig(true)
-    setTimeRemaining()
+    setTimeRemaining(satrtingType)
     setText("");
   }
   function endGame() {
@@ -58,14 +58,14 @@ function AppSpeedTypingGame()
         }
   },[timeRemaining,isTimeRunning])
 
-
+// https://www.google.com/search?q=Disable+button+in+react
   return(
     <div>
     <h1>How fast do you type?</h1>
     <textarea onChange={handleChange}
     value={text}/>
     <h4>Time reminaing: {timeRemaining}</h4>
-    <button onClick={startGame}>Start</button>
+    <button onClick={startGame} disabled={isTimeRunning}>Start</button>
     <h1>Word count: {wordCount}</h1>
     </div>
   )
