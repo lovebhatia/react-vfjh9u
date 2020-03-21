@@ -4,6 +4,7 @@ function AppSpeedTypingGame()
 { 
   const [text,setText]=useState("");
   const [timeRemaining,setTimeRemaining]=useState(5);
+  const [isTimeRunning,setIsTimeRunnig]=useState(false);
   function handleChange(event)
   {
       const {value}=event.target;
@@ -20,16 +21,18 @@ function AppSpeedTypingGame()
 
 //as a recap useEffect will run when the component first mounts and then it will run anytime the time reamining changes. whats kind of cool about that is we can use seTimeout simply wait for 1 sec change the time remaining which will change the 
   useEffect( () => {
-    if(timeRemaining>0)
+    if(isTimeRunning &&  timeRemaining > 0)
     {
 
     setTimeout( () => {
       setTimeRemaining(time => time-1)
     },1000)
     }
-  },[timeRemaining])
+    else if(timeRemaining === 0) {
+            setIsTimeRunnig(false)
+        }
+  },[timeRemaining,isTimeRunning])
 
-  console.log(text)
 
   return(
     <div>
@@ -37,7 +40,7 @@ function AppSpeedTypingGame()
     <textarea onChange={handleChange}
     value={text}/>
     <h4>Time reminaing: {timeRemaining}</h4>
-    <button onClick={() => calculateWordCount(text)}>Start</button>
+    <button onClick={() => setIsTimeRunnig(true)}>Start</button>
     <h1>Word count: ???</h1>
     </div>
   )
@@ -48,3 +51,4 @@ export default AppSpeedTypingGame;
 //test the count by clicking on button 
     //here i cant just run calculatewordcount the beacuse the  eventlistener is going to pass the event to whatever function i run here. so i have to run a anonymous function then use calculateWordCount and then the text i passing in function referring to actual one in stage 
     //<button onClick={calculateWordCount}>Start</button>
+  //      <button onClick={() => calculateWordCount(text)}>Start</button>
