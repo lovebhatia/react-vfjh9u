@@ -40,7 +40,7 @@ import AppUseContext from
 import {ThemeContextUseProvider} from './ReactHooks/useContext/themeContext'
 import AppRefPracContext from './ReactHooks/HooksPracRefThemeContext/AppRefParc'
 import {ThemeContextPracRefProvider} from './ReactHooks/HooksPracRefThemeContext/themeContext'
-import {AppCustomhook from './ReactHooks/CustomHooks/AppCustomHook'
+import AppCustomhook from './ReactHooks/CustomHooks/AppCustomHook'
 
 
 //const themeContext=React.createContext();
