@@ -1,4 +1,4 @@
-import React, {Component} from "react"
+import React, {Component,useState} from "react"
 //const {Provider, Consumer} = React.createContext()
 //here i will just call it themem context
 const ThemeContextPracRef = React.createContext()
@@ -9,6 +9,25 @@ const ThemeContextPracRef = React.createContext()
  * 
  */
 
+function ThemeContextPracRefProvider(props) {
+   const[theme,setTheme]=useState("dark")
+    
+   function toggleTheme  () {
+        setTheme(prevTheme => {
+            return 
+          prevTheme === "light" ? "dark" : "light"
+          
+        })
+    }
+    
+        return (
+            <ThemeContextPracRef.Provider value={{theme: theme, toggleTheme: toggleTheme}}>
+                {props.children}
+            </ThemeContextPracRef.Provider>
+        )
+    
+}
+/*
 class ThemeContextPracRefProvider extends Component {
     state = {
         theme: "dark"
@@ -30,6 +49,6 @@ class ThemeContextPracRefProvider extends Component {
         )
     }
 }
-
+*/
 //export {ThemeContextUseProvider, Consumer as ThemeContextUseConsumer}
 export {ThemeContextPracRefProvider, ThemeContextPracRef}
