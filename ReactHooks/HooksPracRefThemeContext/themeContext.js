@@ -14,8 +14,7 @@ function ThemeContextPracRefProvider(props) {
     
    function toggleTheme  () {
         setTheme(prevTheme => {
-            return 
-          prevTheme === "light" ? "dark" : "light"
+            return prevTheme === "light" ? "dark" : "light"
           
         })
     }

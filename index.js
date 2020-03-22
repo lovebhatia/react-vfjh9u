@@ -40,6 +40,7 @@ import AppUseContext from
 import {ThemeContextUseProvider} from './ReactHooks/useContext/themeContext'
 import AppRefPracContext from './ReactHooks/HooksPracRefThemeContext/AppRefParc'
 import {ThemeContextPracRefProvider} from './ReactHooks/HooksPracRefThemeContext/themeContext'
+import {AppCustomhook from './ReactHooks/CustomHooks/AppCustomHook'
 
 
 //const themeContext=React.createContext();
@@ -65,8 +66,8 @@ import {ThemeContextPracRefProvider} from './ReactHooks/HooksPracRefThemeContext
 //render(<ThemeContextUseStateProvider><AppUseContext/>
 //</ThemeContextUseStateProvider>, document.getElementById('root'));
 //render(<ThemeContextUseProvider> <AppUseContext /> </ThemeContextUseProvider>, document.getElementById("root"))
-render(<ThemeContextPracRefProvider> <AppRefPracContext/> </ThemeContextPracRefProvider>, document.getElementById("root"))
-
+//render(<ThemeContextPracRefProvider> <AppRefPracContext/> </ThemeContextPracRefProvider>, document.getElementById("root"))
+render(<AppCustomhook/>,document.getElementById("root"));
 
 
 
