@@ -41,7 +41,7 @@ import {ThemeContextUseProvider} from './ReactHooks/useContext/themeContext'
 import AppRefPracContext from './ReactHooks/HooksPracRefThemeContext/AppRefParc'
 import {ThemeContextPracRefProvider} from './ReactHooks/HooksPracRefThemeContext/themeContext'
 import AppCustomhook from './ReactHooks/CustomHooks/AppCustomHook'
-
+import AppRefactorToggler from './ReactHooks/CHPRefactorToggler/AppRefactorToggler'
 
 //const themeContext=React.createContext();
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
@@ -68,6 +68,7 @@ import AppCustomhook from './ReactHooks/CustomHooks/AppCustomHook'
 //render(<ThemeContextUseProvider> <AppUseContext /> </ThemeContextUseProvider>, document.getElementById("root"))
 //render(<ThemeContextPracRefProvider> <AppRefPracContext/> </ThemeContextPracRefProvider>, document.getElementById("root"))
 render(<AppCustomhook/>,document.getElementById("root"));
+render(<AppRefactorToggler/>,document.getElementById("root"));
 
 
 
