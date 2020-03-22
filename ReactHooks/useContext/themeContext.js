@@ -1,6 +1,7 @@
 import React, {Component} from "react"
-const {Provider, Consumer} = React.createContext()
-
+//const {Provider, Consumer} = React.createContext()
+//here i will just call it themem context
+const ThemeContextUse = React.createContext()
 /**
  * Challenge:
  * 1) Add state to hold the current theme
@@ -23,11 +24,12 @@ class ThemeContextUseProvider extends Component {
     
     render() {
         return (
-            <Provider value={{theme: this.state.theme, toggleTheme: this.toggleTheme}}>
+            <ThemeContextUse.Provider value={{theme: this.state.theme, toggleTheme: this.toggleTheme}}>
                 {this.props.children}
-            </Provider>
+            </ThemeContextUse.Provider>
         )
     }
 }
 
-export {ThemeContextUseProvider, Consumer as ThemeContextUseConsumer}
+//export {ThemeContextUseProvider, Consumer as ThemeContextUseConsumer}
+export {ThemeContextUseProvider, ThemeContextUse}

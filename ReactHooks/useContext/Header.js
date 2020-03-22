@@ -1,15 +1,14 @@
-import React, {Component} from "react"
-import {ThemeContextUseConsumer} from "./themeContext"
+import React, {Component,useContext} from "react"
+import {ThemeContextUse} from "./themeContext"
 
 function Header(props) {
+  const context=useContext(ThemeContextUse)
     return (
-        <ThemeContextUseConsumer>
-            {context => (
+       
                 <header className={`${context.theme}-theme`}>
                     <h2>{context.theme === "light" ? "Light" : "Dark"} Theme</h2>
                 </header>
-            )}
-        </ThemeContextUseConsumer>
+         
     )    
 }
 
