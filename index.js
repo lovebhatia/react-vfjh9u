@@ -60,15 +60,15 @@ import AppRefactorToggler from './ReactHooks/CHPRefactorToggler/AppRefactorToggl
 //render(<AppUseState2/>,document.getElementById("root"));
 //render(<AppComplexChangeState/>,document.getElementById("root"));
 //render(<AppUseEffect1/>,document.getElementById("root"));
-//render(<AppSpeedTypingGame/>,document.getElementById("root"));
+render(<AppSpeedTypingGame/>,document.getElementById("root"));
 //render(<AppUseRef/>,document.getElementById("root"));
 
 //render(<ThemeContextUseStateProvider><AppUseContext/>
 //</ThemeContextUseStateProvider>, document.getElementById('root'));
 //render(<ThemeContextUseProvider> <AppUseContext /> </ThemeContextUseProvider>, document.getElementById("root"))
 //render(<ThemeContextPracRefProvider> <AppRefPracContext/> </ThemeContextPracRefProvider>, document.getElementById("root"))
-render(<AppCustomhook/>,document.getElementById("root"));
-render(<AppRefactorToggler/>,document.getElementById("root"));
+//render(<AppCustomhook/>,document.getElementById("root"));
+//render(<AppRefactorToggler/>,document.getElementById("root"));
 
 
 

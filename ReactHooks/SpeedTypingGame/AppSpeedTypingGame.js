@@ -1,7 +1,17 @@
 
 import React,{useState,useEffect,useRef} from "react"
+import useWordGame from "./hooks/useWordGame"
 function AppSpeedTypingGame()
 { 
+
+  const {inputRef, 
+        handleChange, 
+        text, 
+        isTimeRunning, 
+        timeRemaining, 
+        startGame, 
+        wordCount}=useWordGame();
+  /*
   const satrtingType=5
   const [text,setText]=useState("");
   const [timeRemaining,setTimeRemaining]=useState(satrtingType);
@@ -63,7 +73,7 @@ function AppSpeedTypingGame()
 
         }
   },[timeRemaining,isTimeRunning])
-
+*/
 // https://www.google.com/search?q=Disable+button+in+react
   return(
     <div>
