@@ -8,7 +8,7 @@ const {Provider, Consumer} = React.createContext()
  * 
  */
 
-class ThemeContextUseStateProvider extends Component {
+class ThemeContextUseProvider extends Component {
     state = {
         theme: "dark"
     }
@@ -30,4 +30,4 @@ class ThemeContextUseStateProvider extends Component {
     }
 }
 
-export {ThemeContextUseStateProvider, Consumer as ThemeContextUseStateConsumer}
+export {ThemeContextUseProvider, Consumer as ThemeContextUseConsumer}

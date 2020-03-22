@@ -1,13 +1,13 @@
 import React from "react"
-import {ThemeContextUseStateConsumer} from "./themeContext"
+import {ThemeContextUseConsumer} from "./themeContext"
 
 function Button(props) {
     return (
-        <ThemeContextUseStateConsumer>
+        <ThemeContextUseConsumer>
             {context => (
                 <button onClick={context.toggleTheme} className={`${context.theme}-theme`}>Switch Theme</button>
             )}
-        </ThemeContextUseStateConsumer>
+        </ThemeContextUseConsumer>
     )    
 }
 

@@ -37,7 +37,7 @@ import AppUseRef from
 './ReactHooks/useref/AppUseRef'
 import AppUseContext from 
 './ReactHooks/useContext/AppUseContext'
-import ThemeContextUseStateProvider from './ReactHooks/useContext/themeContext'
+import {ThemeContextUseProvider} from './ReactHooks/useContext/themeContext'
 
 
 
@@ -63,7 +63,13 @@ import ThemeContextUseStateProvider from './ReactHooks/useContext/themeContext'
 
 //render(<ThemeContextUseStateProvider><AppUseContext/>
 //</ThemeContextUseStateProvider>, document.getElementById('root'));
-render(<ThemeContextUseStateProvider><AppUseContext/></The,document.getElementById("root"))
+render(
+    <ThemeContextUseProvider>
+        <AppUseContext />
+    </ThemeContextUseProvider>, 
+    document.getElementById("root")
+)
+
 
 
 
