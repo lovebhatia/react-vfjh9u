@@ -1,7 +1,7 @@
 import React from "react";
 import Toggler from './Toggler'
 
-function Menu(prop)
+function Menu(props)
 {
   return(
     <Toggler defaultOnValue={true} render={({on, toggle}) => (
