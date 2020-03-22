@@ -38,7 +38,8 @@ import AppUseRef from
 import AppUseContext from 
 './ReactHooks/useContext/AppUseContext'
 import {ThemeContextUseProvider} from './ReactHooks/useContext/themeContext'
-
+import AppRefPracContext} from './ReactHooks/HooksPracRefThemeContext/AppRefParc'
+import {ThemeContextPracRefProvider} from './ReactHooks/HooksPracRefThemeContext/themeContext'
 
 
 //const themeContext=React.createContext();
@@ -63,12 +64,10 @@ import {ThemeContextUseProvider} from './ReactHooks/useContext/themeContext'
 
 //render(<ThemeContextUseStateProvider><AppUseContext/>
 //</ThemeContextUseStateProvider>, document.getElementById('root'));
-render(
-    <ThemeContextUseProvider>
-        <AppUseContext />
-    </ThemeContextUseProvider>, 
-    document.getElementById("root")
-)
+//render(<ThemeContextUseProvider> <AppUseContext /> </ThemeContextUseProvider>, document.getElementById("root"))
+render(<ThemeContextPracRefProvider> <AppRefPracContext/> </ThemeContextPracRefProvider>, document.getElementById("root"))
+
+
 
 
 
