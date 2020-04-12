@@ -46,7 +46,8 @@ import BrowserRouterApp from './ReactRouter/BrowserRouter/BrowserRouterApp';
 import {BrowserRouter} from 'react-router-dom';
 import AppRouterLink from './ReactRouter/RouterLink/AppRouterLink'
 import AppSwitchRoute from './ReactRouter/SwitchRoute/AppSwitchRoute'
-
+import AppSwitchRouteprac from './ReactRouter/SwitchRoutePractise/AppSwitchRouteprac'
+import AppPropsPassed from './ReactRouter/PropsPaseedRouterComponent/AppPropsPassed'
 
 //const themeContext=React.createContext();
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
@@ -78,9 +79,10 @@ import AppSwitchRoute from './ReactRouter/SwitchRoute/AppSwitchRoute'
 //render(<BrowserRouter><BrowserRouterApp/></BrowserRouter>,document.getElementById("root"));
 //render(<BrowserRouter><AppRouterLink/></BrowserRouter>,document.getElementById("root"));
 //render(<AppRouterLink/>,document.getElementById("root"));
+//render(<BrowserRouter><AppSwitchRoute/></BrowserRouter>,document.getElementById("root"));
+//render(<BrowserRouter><AppSwitchRouteprac/></BrowserRouter>,document.getElementById("root"));
+render(<BrowserRouter><AppPropsPassed/></BrowserRouter>,document.getElementById("root"));
 
-
-render(<BrowserRouter><AppSwitchRoute/></BrowserRouter>,document.getElementById("root"));
 
 
 
