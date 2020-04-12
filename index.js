@@ -44,7 +44,11 @@ import AppCustomhook from './ReactHooks/CustomHooks/AppCustomHook'
 import AppRefactorToggler from './ReactHooks/CHPRefactorToggler/AppRefactorToggler'
 import BrowserRouterApp from './ReactRouter/BrowserRouter/BrowserRouterApp';
 import {BrowserRouter} from 'react-router-dom';
-import {AppRouterLink} from './ReactRouter/RouterLink/AppRouterLink';
+import AppRouterLink from './ReactRouter/RouterLink/AppRouterLink'
+
+
+import AppSwitchRoute from './ReactRouter/SwitchRoute/AppSwitchRoute'
+
 
 //const themeContext=React.createContext();
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
@@ -74,7 +78,11 @@ import {AppRouterLink} from './ReactRouter/RouterLink/AppRouterLink';
 //render(<AppRefactorToggler/>,document.getElementById("root"));
 
 //render(<BrowserRouter><BrowserRouterApp/></BrowserRouter>,document.getElementById("root"));
-render(<BrowserRouter><AppRou/></BrowserRouter>,document.getElementById("root"));
+//render(<BrowserRouter><AppRouterLink/></BrowserRouter>,document.getElementById("root"));
+//render(<AppRouterLink/>,document.getElementById("root"));
+
+
+render(<BrowserRouter><AppSwitchRoute/></BrowserRouter>,document.getElementById("root"));
 
 
 
