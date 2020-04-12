@@ -42,12 +42,9 @@ import AppRefPracContext from './ReactHooks/HooksPracRefThemeContext/AppRefParc'
 import {ThemeContextPracRefProvider} from './ReactHooks/HooksPracRefThemeContext/themeContext'
 import AppCustomhook from './ReactHooks/CustomHooks/AppCustomHook'
 import AppRefactorToggler from './ReactHooks/CHPRefactorToggler/AppRefactorToggler'
-
-
-
 import BrowserRouterApp from './ReactRouter/BrowserRouter/BrowserRouterApp';
-
 import {BrowserRouter} from 'react-router-dom';
+import {AppRouterLink} from './ReactRouter/RouterLink/AppRouterLink';
 
 //const themeContext=React.createContext();
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
@@ -76,10 +73,8 @@ import {BrowserRouter} from 'react-router-dom';
 //render(<AppCustomhook/>,document.getElementById("root"));
 //render(<AppRefactorToggler/>,document.getElementById("root"));
 
-
-
-
-render(<BrowserRouter><BrowserRouterApp/></BrowserRouter>,document.getElementById("root"));
+//render(<BrowserRouter><BrowserRouterApp/></BrowserRouter>,document.getElementById("root"));
+render(<BrowserRouter><AppRou/></BrowserRouter>,document.getElementById("root"));
 
 
 
