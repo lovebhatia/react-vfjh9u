@@ -43,6 +43,12 @@ import {ThemeContextPracRefProvider} from './ReactHooks/HooksPracRefThemeContext
 import AppCustomhook from './ReactHooks/CustomHooks/AppCustomHook'
 import AppRefactorToggler from './ReactHooks/CHPRefactorToggler/AppRefactorToggler'
 
+
+
+import BrowserRouterApp from './ReactRouter/BrowserRouter/BrowserRouterApp';
+
+import {BrowserRouter} from 'react-router-dom';
+
 //const themeContext=React.createContext();
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
 
@@ -60,7 +66,7 @@ import AppRefactorToggler from './ReactHooks/CHPRefactorToggler/AppRefactorToggl
 //render(<AppUseState2/>,document.getElementById("root"));
 //render(<AppComplexChangeState/>,document.getElementById("root"));
 //render(<AppUseEffect1/>,document.getElementById("root"));
-render(<AppSpeedTypingGame/>,document.getElementById("root"));
+//render(<AppSpeedTypingGame/>,document.getElementById("root"));
 //render(<AppUseRef/>,document.getElementById("root"));
 
 //render(<ThemeContextUseStateProvider><AppUseContext/>
@@ -69,6 +75,11 @@ render(<AppSpeedTypingGame/>,document.getElementById("root"));
 //render(<ThemeContextPracRefProvider> <AppRefPracContext/> </ThemeContextPracRefProvider>, document.getElementById("root"))
 //render(<AppCustomhook/>,document.getElementById("root"));
 //render(<AppRefactorToggler/>,document.getElementById("root"));
+
+
+
+
+render(<BrowserRouter><BrowserRouterApp/></BrowserRouter>,document.getElementById("root"));
 
 
 
