@@ -51,6 +51,9 @@ import AppPropsPassed from './ReactRouter/PropsPaseedRouterComponent/AppPropsPas
 
 import AppNestedRoute from './ReactRouter/ReactRouterNestedRoute/AppNestedRoute'
 
+import AppUseParam from './ReactRouter/ReactRouteruseParams/AppUseParam'
+
+
 //const themeContext=React.createContext();
 //render(<AppHocsPart someprophere="hi there"></AppHocsPart>, document.getElementById('root'));
 
@@ -84,7 +87,10 @@ import AppNestedRoute from './ReactRouter/ReactRouterNestedRoute/AppNestedRoute'
 //render(<BrowserRouter><AppSwitchRoute/></BrowserRouter>,document.getElementById("root"));
 //render(<BrowserRouter><AppSwitchRouteprac/></BrowserRouter>,document.getElementById("root"));
 //render(<BrowserRouter><AppPropsPassed/></BrowserRouter>,document.getElementById("root"));
-render(<BrowserRouter><AppNestedRoute/></BrowserRouter>,document.getElementById("root"));
+//render(<BrowserRouter><AppNestedRoute/></BrowserRouter>,document.getElementById("root"));
+render(<BrowserRouter><AppUseParam/></BrowserRouter>,document.getElementById("root"));
+
+
 
 
 
