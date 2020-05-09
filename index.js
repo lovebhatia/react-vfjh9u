@@ -51,7 +51,7 @@ import AppPropsPassed from './ReactRouter/PropsPaseedRouterComponent/AppPropsPas
 
 import AppNestedRoute from './ReactRouter/ReactRouterNestedRoute/AppNestedRoute'
 
-import AppUseParam from './ReactRouter/ReactRouteruseParams/AppUseParam'
+import AppUseParam from './ReactRouter/ReactRouteruseParams/AppUseParams'
 
 
 //const themeContext=React.createContext();
