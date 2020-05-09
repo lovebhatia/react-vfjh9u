@@ -24,5 +24,4 @@ function AppUseMatchParam() {
         </div>
     )
 }
-
 export default AppUseMatchParam

@@ -90,8 +90,7 @@ import AppUseMatchParam from './ReactRouter/ReactRouteruseMatchParams/AppUseMatc
 //render(<BrowserRouter><AppPropsPassed/></BrowserRouter>,document.getElementById("root"));
 //render(<BrowserRouter><AppNestedRoute/></BrowserRouter>,document.getElementById("root"));
 //render(<BrowserRouter><AppUseParam/></BrowserRouter>,document.getElementById("root"));
-render(<AppUseMatchParam/>,document.getElementById("root"));
-
+render(<BrowserRouter><AppUseMatchParam/></BrowserRouter>,document.getElementById("root"));
 
 
 
