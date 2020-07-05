@@ -8,4 +8,4 @@ function Photos(){
   )
 }
 
-export default 
+export default Photos
