@@ -4,7 +4,8 @@ import Header from "./components/Header"
 function AppCapstone(){
   return(
     <div>
-    <Header></Header>
+    <Header/>
+    <h1>Home Page</h1>
     </div>
   )
 }
