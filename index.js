@@ -54,6 +54,7 @@ import AppNestedRoute from './ReactRouter/ReactRouterNestedRoute/AppNestedRoute'
 import AppUseParam from './ReactRouter/ReactRouteruseParams/AppUseParams'
 import AppUseMatchParam from './ReactRouter/ReactRouteruseMatchParams/AppUseMatchParam'
 import AppUseHistory from './ReactRouter/UseHistory/AppUseHistory'
+import AppCapstone from "./Capstone/AppCapstone"
 
 
 //const themeContext=React.createContext();
@@ -92,7 +93,8 @@ import AppUseHistory from './ReactRouter/UseHistory/AppUseHistory'
 //render(<BrowserRouter><AppNestedRoute/></BrowserRouter>,document.getElementById("root"));
 //render(<BrowserRouter><AppUseParam/></BrowserRouter>,document.getElementById("root"));
 //render(<Router><AppUseMatchParam/></Router>,document.getElementById("root"));
-render(<Router><AppUseHistory/></Router>,document.getElementById("root"));
+//render(<Router><AppUseHistory/></Router>,document.getElementById("root"));
+render(<Router><AppCapstone/></Router>,document.getElementById("root"));
 
 
 
