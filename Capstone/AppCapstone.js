@@ -1,9 +1,12 @@
 import React from "react"
+import Header from "./components/Header"
 
-function App(){
+function AppCapstone(){
   return(
     <div>
-    <Hea
+    <Header></Header>
     </div>
   )
 }
+
+export default AppCapstone
