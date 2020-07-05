@@ -43,7 +43,7 @@ import {ThemeContextPracRefProvider} from './ReactHooks/HooksPracRefThemeContext
 import AppCustomhook from './ReactHooks/CustomHooks/AppCustomHook'
 import AppRefactorToggler from './ReactHooks/CHPRefactorToggler/AppRefactorToggler'
 import BrowserRouterApp from './ReactRouter/BrowserRouter/BrowserRouterApp';
-import {BrowserRouter} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import AppRouterLink from './ReactRouter/RouterLink/AppRouterLink'
 import AppSwitchRoute from './ReactRouter/SwitchRoute/AppSwitchRoute'
 import AppSwitchRouteprac from './ReactRouter/SwitchRoutePractise/AppSwitchRouteprac'
@@ -53,6 +53,7 @@ import AppNestedRoute from './ReactRouter/ReactRouterNestedRoute/AppNestedRoute'
 
 import AppUseParam from './ReactRouter/ReactRouteruseParams/AppUseParams'
 import AppUseMatchParam from './ReactRouter/ReactRouteruseMatchParams/AppUseMatchParam'
+import AppUseHistory from './ReactRouter/UseHistory/AppUseHistory'
 
 
 //const themeContext=React.createContext();
@@ -90,7 +91,8 @@ import AppUseMatchParam from './ReactRouter/ReactRouteruseMatchParams/AppUseMatc
 //render(<BrowserRouter><AppPropsPassed/></BrowserRouter>,document.getElementById("root"));
 //render(<BrowserRouter><AppNestedRoute/></BrowserRouter>,document.getElementById("root"));
 //render(<BrowserRouter><AppUseParam/></BrowserRouter>,document.getElementById("root"));
-render(<BrowserRouter><AppUseMatchParam/></BrowserRouter>,document.getElementById("root"));
+//render(<Router><AppUseMatchParam/></Router>,document.getElementById("root"));
+render(<Router><AppUseHistory/></Router>,document.getElementById("root"));
 
 
 

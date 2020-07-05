@@ -7,7 +7,7 @@ import Profile from "./pages/profile/Profile"
 import {Switch, Route} from "react-router-dom"
 
 function AppUseMatchParam() {    
-    return (
+   return (
         <div>
             <Header />
             
@@ -15,7 +15,7 @@ function AppUseMatchParam() {
                 <Route exact path="/">
                     <Home />
                 </Route>
-                <Route path="/profile">
+                <Route path="/user">
                     <Profile/>
                 </Route>
             </Switch>
