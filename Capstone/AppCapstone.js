@@ -9,10 +9,13 @@ function AppCapstone(){
     <div>
     <Header/>
     <Switch>
-    <Route exactPath="/"><Photos/></Route>
-    <Route exactPath="/cart"></></Route>
+      <Route exactPath="/">
+       <Photos/>
+      </Route>
+      <Route Path="/cart">
+        <Cart/>
+      </Route>
     </Switch>
-    <h1>Home Page</h1>
     </div>
   )
 }
