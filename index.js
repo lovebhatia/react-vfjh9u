@@ -94,7 +94,7 @@ import AppCapstone from "./Capstone/AppCapstone"
 //render(<BrowserRouter><AppUseParam/></BrowserRouter>,document.getElementById("root"));
 //render(<Router><AppUseMatchParam/></Router>,document.getElementById("root"));
 //render(<Router><AppUseHistory/></Router>,document.getElementById("root"));
-render(<AppCapstone/>,document.getElementById("root"));
+render(<Router><AppCapstone/></Router>,document.getElementById("root"));
 
 
 
