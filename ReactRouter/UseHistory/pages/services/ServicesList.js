@@ -5,7 +5,7 @@ import servicesData from "./servicesData"
 
 function ServicesList() {
   const location=useLocation()
-  console.log(useLoca)
+  console.log(useLocation())
 
     const services = servicesData.map(service => (
         <div key={service._id}>
