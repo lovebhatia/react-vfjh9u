@@ -73,7 +73,7 @@ import AppCapstone from "./Capstone/AppCapstone"
 //render(<AppUseState1/>,document.getElementById("root"));
 //render(<AppUseState2/>,document.getElementById("root"));
 //render(<AppComplexChangeState/>,document.getElementById("root"));
-//render(<AppUseEffect1/>,document.getElementById("root"));
+render(<AppUseEffect1/>,document.getElementById("root"));
 //render(<AppSpeedTypingGame/>,document.getElementById("root"));
 //render(<AppUseRef/>,document.getElementById("root"));
 
@@ -94,7 +94,7 @@ import AppCapstone from "./Capstone/AppCapstone"
 //render(<BrowserRouter><AppUseParam/></BrowserRouter>,document.getElementById("root"));
 //render(<Router><AppUseMatchParam/></Router>,document.getElementById("root"));
 //render(<Router><AppUseHistory/></Router>,document.getElementById("root"));
-render(<Router><AppCapstone/></Router>,document.getElementById("root"));
+//render(<Router><AppCapstone/></Router>,document.getElementById("root"));
 
 
 
