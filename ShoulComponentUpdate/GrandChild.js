@@ -6,7 +6,7 @@ class GrandChild extends Component
     console.log("[ ]   [ ]   [ ]   [👶🏻] rendered");
     return(
       <div>
-      <p>I am Grand Child Component</p>
+      <p>I am Grand Child Component chnaging for git</p>
       </div>
     )
   }
